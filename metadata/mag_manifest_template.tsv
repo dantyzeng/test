@@ -1,0 +1,3 @@
+habitat	mag_id	fasta_path	completeness	contamination	quality_pass	checkm2_report
+activated_sludge	MAG_001	mags/activated_sludge/MAG_001.fa	95.0	2.0	True	qc/activated_sludge/quality_report.tsv
+

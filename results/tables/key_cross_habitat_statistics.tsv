@@ -1,0 +1,11 @@
+analysis_endpoint	test_or_summary	statistic	p_value	interpretation
+defense_system_composition	PERMANOVA_R2	0.475	0.0001	Habitat-associated DS composition; interpret with PERMDISP
+microbial_phylum_composition	PERMANOVA_R2	0.6548	0.0001	Strong habitat structure at phylum level
+microbial_genus_composition	PERMANOVA_R2	0.5256	0.0001	Habitat structure at genus level
+defense_system_phylum_coupling	Raw_Mantel_rho	0.205	0.0013	Raw association is partly habitat-driven
+defense_system_phylum_coupling	Partial_Mantel_controlling_habitat_rho	0.090	0.1022	Residual association is not significant after habitat control
+defense_system_composition	PERMDISP_p	NA	0.0007	Dispersion differences also contribute to PERMANOVA separation
+total_DS_burden	Kruskal_Wallis_p	NA	<0.0001	Habitat-level differences in weighted burden
+DS_carrier_fraction	Kruskal_Wallis_p	NA	<0.0001	Habitat-level differences in abundance-weighted carrier fraction
+rarefaction	DS_type_recovery_at_100_percent	0.954-0.996	NA	DS types are close to saturation, but not all MAGs are fully recovered
+rarefaction	MAG_recovery_at_100_percent	0.791-0.951	NA	Reference-catalog MAG recovery remains incomplete

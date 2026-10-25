@@ -1,0 +1,44 @@
+# All paths are relative to the complete local project root unless overridden
+# by environment variables. The GitHub package intentionally excludes large data.
+project_name: habitat_MAG_defense
+source_root: .
+threads: 16
+random_seed: 20260920
+
+habitats:
+  - activated_sludge
+  - farmland_soil
+  - lake_surface_water
+  - surface_seawater
+  - glacier
+  - permafrost
+  - arctic_permafrost
+  - deep_sea_cold_seep
+
+inputs:
+  reads_manifest: quality_analysis/00_meta/reads_manifest_v3.tsv
+  sample_manifest: quality_analysis/04_compare/abundance/sample_metadata.tsv
+  mag_manifest: analysis/quality_pass_mag_manifest_8hab.tsv
+  taxonomy: quality_analysis/01_mag_qc/taxonomy.tsv
+  defense_presence: analysis/uniform_eight_system_presence_absence.tsv
+  defense_prevalence: analysis/uniform_eight_system_prevalence.tsv
+  rpkm_tables: quality_analysis/02_rpkm
+
+outputs:
+  summary: results/summary.md
+  tables: results/tables
+  figures: results/figures
+
+thresholds:
+  checkm2_completeness_percent: 50
+  checkm2_contamination_percent: 10
+  rarefaction_fractions: [0.10, 0.25, 0.50, 1.00]
+  defense_island_gap_bp: [5000, 10000, 20000]
+  permutations: 9999
+
+software:
+  defensefinder: "2.0.1"
+  defense_finder_models: "3.0.0"
+  gtdbtk: "2.4.0, database r220"
+  python: "3.10+"
+  r: "4.3+"

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Eight-habitat MAG defense-system analysis"
+message: "Please cite this repository and the original data sources listed in metadata."
+authors:
+  - family-names: "Zengdt"
+    given-names: ""
+date-released: 2026-10-25
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/<account>/<repository>"
+keywords:
+  - metagenomics
+  - metagenome-assembled genomes
+  - defense systems
+  - DefenseFinder
+  - Ceres
+

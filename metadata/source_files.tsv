@@ -1,0 +1,8 @@
+local_role	source_path	purpose	publish_in_github
+mag_manifest	analysis/quality_pass_mag_manifest_8hab.tsv	quality-pass MAG denominator and CheckM2 links	仅发布摘要表
+system_prevalence	analysis/uniform_eight_system_prevalence.tsv	MAG-level defense-system prevalence	仅发布摘要表
+sample_manifest	quality_analysis/04_compare/abundance/sample_metadata.tsv	sample-level metadata for abundance/statistics	建议发布去绝对路径版本
+reads_manifest	quality_analysis/00_meta/reads_manifest_v3.tsv	FASTQ accession/path manifest	仅发布 accession/相对路径
+taxonomy	quality_analysis/01_mag_qc/taxonomy.tsv	GTDB-Tk taxonomy	可发布压缩 TSV
+ceres_report	quality_analysis/06_ceres/REPORT.md	Ceres methods, limitations and evidence index	可发布
+cross_habitat_report	quality_analysis/04_compare/story/FIGURE_LEGENDS_AND_ANALYSIS_SUMMARY_ZH.md	cross-habitat statistical summary and figure notes	可发布

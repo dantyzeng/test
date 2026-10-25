@@ -1,0 +1,27 @@
+# Large or reproducible data products: keep manifests and summaries, not binaries.
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.fa
+*.fna
+*.fasta
+*.faa
+*.prt
+*.idx
+*.tar.gz
+!habitat_MAGs_github_framework.tar.gz
+*.zip
+*.msh
+*.bt2l
+*.bt2
+*.pdf
+*.png
+*.svg
+*.pyc
+__pycache__/
+.snakemake/
+logs/
+tmp/

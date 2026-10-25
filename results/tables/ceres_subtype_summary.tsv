@@ -1,0 +1,3 @@
+subtype	n	hit_len_median	hit_len_min	hit_len_max	profile_cov_median	usable_neighbours_median	n_habitats	top_habitats	n_host_phyla	top_host_phyla
+CrsA1	6857	131	75	379	0.961	6856	8	activated_sludge:1768;farmland_soil:1644;permafrost:1456;surface_seawater:742	82	Pseudomonadota:1488;Actinomycetota:975;Bacteroidota:869;Acidobacteriota:572
+CrsA2	20	277	171	328	0.988	0	3	farmland_soil:14;activated_sludge:3;glacier:3	1	Actinomycetota:20

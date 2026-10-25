@@ -1,0 +1,38 @@
+name: habitat-mag-defense
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
+  - scikit-learn>=1.3
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  - openpyxl>=3.1
+  - pyyaml>=6.0
+  - r-base=4.3
+  - r-vegan>=2.6
+  - r-randomforest>=4.7
+  - r-data.table>=1.14
+  - r-ggplot2>=3.4
+  - r-readxl>=1.4
+  - fastqc>=0.12
+  - fastp>=0.23
+  - bowtie2>=2.5
+  - samtools>=1.17
+  - seqkit>=2.5
+  - iqtree>=2.2
+  - mafft>=7.5
+  - mash>=2.3
+  - prodigal>=2.6
+  - hmmer>=3.3
+  - biopython>=1.81
+  # Heavy bioinformatics tools. Their databases are installed separately.
+  - gtdbtk=2.4.0
+  - checkm2
+  - defense-finder
+  - drep
+  - coverm
